@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uts/login_screen.dart';
+import 'package:myapp/login_screen.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
@@ -20,11 +20,7 @@ class _SignupScreenState extends State<SignupScreen> {
         children: [
           Text(
             'Lets Get Started!',
-            style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 25,
-                color: Colors.black,
-                height: 1),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.black, height: 1),
           ),
           Text(
             'Create Your Account ',
@@ -134,8 +130,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     style: TextStyle(fontSize: 12),
                   ),
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => LoginScreen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
                   },
                 ),
               ],

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:uts/home_screen.dart';
-import 'package:uts/login_screen.dart';
-import 'package:uts/signup_screen.dart';
+import 'package:myapp/home_screen.dart';
+import 'package:myapp/login_screen.dart';
+import 'package:myapp/signup_screen.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:uts/splash_screen.dart';
+import 'package:myapp/splash_screen.dart';
 
 void main() async {
   await Hive.initFlutter();
