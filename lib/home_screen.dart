@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hive/hive.dart';
-import 'package:uts/login_screen.dart';
+import 'package:myapp/login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,10 +14,8 @@ class HomeScreen extends StatelessWidget {
       body: Center(
           child: Column(
         children: [
-          Text('Selamat Datang',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28)),
-          Text('Aplikasi Penitipan Barang',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28)),
+          Text('Selamat Datang', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28)),
+          Text('Aplikasi Penitipan Barang', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28)),
           SizedBox(height: 450),
           ElevatedButton(
             onPressed: () {
