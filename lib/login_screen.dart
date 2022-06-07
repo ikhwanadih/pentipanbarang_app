@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:uts/home_screen.dart';
-import 'package:uts/signup_screen.dart';
+import 'package:myapp/home_screen.dart';
+import 'package:myapp/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -65,11 +65,9 @@ class _LoginScreenState extends State<LoginScreen> {
               children: <Widget>[
                 FlatButton(
                     onPressed: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Fitur dalam pengembangan')));
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fitur dalam pengembangan')));
                     },
-                    child: Text(
-                        '                                                         Forgot Password?'))
+                    child: Text('                                                         Forgot Password?'))
               ],
             ),
           ),
@@ -78,11 +76,9 @@ class _LoginScreenState extends State<LoginScreen> {
             height: 50,
             child: ElevatedButton(
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
                 print('username = ${userNameController.text} ');
-                if (userNameController.text == 'admin' &&
-                    passwordController.text == 'admin') {
+                if (userNameController.text == 'admin' && passwordController.text == 'admin') {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text('anda berhasil login'),
@@ -123,17 +119,12 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                   child: ElevatedButton(
                     onPressed: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Fitur dalam pengembangan')));
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fitur dalam pengembangan')));
                     },
-                    style: ElevatedButton.styleFrom(
-                        primary: Colors.blue[400],
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15))),
+                    style: ElevatedButton.styleFrom(primary: Colors.blue[400], shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -151,17 +142,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   width: 10,
                 ),
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                   child: ElevatedButton(
                       onPressed: () {
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            content: Text('Fitur dalam pengembangan')));
+                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fitur dalam pengembangan')));
                       },
-                      style: ElevatedButton.styleFrom(
-                          primary: Colors.red[400],
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15))),
+                      style: ElevatedButton.styleFrom(primary: Colors.red[400], shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -192,10 +178,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: TextStyle(fontSize: 12),
                   ),
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => SignupScreen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SignupScreen()));
                   },
                 ),
               ],
