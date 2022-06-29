@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">221655965877-pghoboj5htd7tgv0ve1aqahsitpv3oeu.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">221655965877</string>
+    <string name="google_api_key" translatable="false">AIzaSyBLJ5zTquKjUGbxdnsVBuWLJ99z2K0FyWs</string>
+    <string name="google_app_id" translatable="false">1:221655965877:android:bafcf933eaa060f7995efc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBLJ5zTquKjUGbxdnsVBuWLJ99z2K0FyWs</string>
+    <string name="google_storage_bucket" translatable="false">penitipanbarang-uas-tim1.appspot.com</string>
+    <string name="project_id" translatable="false">penitipanbarang-uas-tim1</string>
+</resources>

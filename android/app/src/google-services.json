@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "221655965877",
+    "project_id": "penitipanbarang-uas-tim1",
+    "storage_bucket": "penitipanbarang-uas-tim1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221655965877:android:bafcf933eaa060f7995efc",
+        "android_client_info": {
+          "package_name": "penitipanbarang.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221655965877-pghoboj5htd7tgv0ve1aqahsitpv3oeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLJ5zTquKjUGbxdnsVBuWLJ99z2K0FyWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221655965877-pghoboj5htd7tgv0ve1aqahsitpv3oeu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
