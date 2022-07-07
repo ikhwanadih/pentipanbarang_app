@@ -24,14 +24,21 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             decoration: const BoxDecoration(
               shape: BoxShape.rectangle,
               image: DecorationImage(
-                image: AssetImage('assets/man.png'),
+                image: AssetImage('assets/img/logo.png'),
               ),
             ),
           ),
           const Text(
-            "Profil Anda",
+            "IOS",
             style: TextStyle(color: Colors.white, fontSize: 20),
-          )
+          ),
+          Text(
+            "Aman Dan Terpercaya",
+            style: TextStyle(
+              color: Colors.grey[200],
+              fontSize: 14,
+            ),
+          ),
         ],
       ),
     );
