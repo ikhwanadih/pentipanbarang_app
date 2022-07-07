@@ -42,8 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
             return ("Please Enter Your Email");
           }
           // reg expression for email validation
-          if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
-              .hasMatch(value)) {
+          if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]").hasMatch(value)) {
             return ("Please Enter a valid email");
           }
           return null;
@@ -101,11 +100,9 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Text(
             "Login",
             textAlign: TextAlign.center,
-            style: TextStyle(
-                fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
           )),
     );
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
@@ -133,27 +130,18 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(height: 35),
                     loginButton,
                     SizedBox(height: 15),
-                    Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text("Don't have an account? "),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          RegistrationScreen()));
-                            },
-                            child: Text(
-                              "SignUp",
-                              style: TextStyle(
-                                  color: Colors.redAccent,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          )
-                        ])
+                    Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+                      Text("Don't have an account? "),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => RegistrationScreen()));
+                        },
+                        child: Text(
+                          "SignUp",
+                          style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold, fontSize: 15),
+                        ),
+                      )
+                    ])
                   ],
                 ),
               ),
@@ -168,13 +156,10 @@ class _LoginScreenState extends State<LoginScreen> {
   void signIn(String email, String password) async {
     if (_formKey.currentState!.validate()) {
       try {
-        await _auth
-            .signInWithEmailAndPassword(email: email, password: password)
-            .then((uid) => {
-                  Fluttertoast.showToast(msg: "Login Successful"),
-                  Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => HomePage())),
-                });
+        await _auth.signInWithEmailAndPassword(email: email, password: password).then((uid) => {
+              Fluttertoast.showToast(msg: "Login Successful"),
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage())),
+            });
       } on FirebaseAuthException catch (error) {
         switch (error.code) {
           case "invalid-email":
