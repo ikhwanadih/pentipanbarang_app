@@ -29,7 +29,7 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             ),
           ),
           const Text(
-            "IOS",
+            "LordNug",
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           Text(
