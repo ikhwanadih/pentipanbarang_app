@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-penitipanbarang/app/BuildConfig.java
- penitipanbarang.app.BuildConfig
