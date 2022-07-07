@@ -24,7 +24,7 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             decoration: const BoxDecoration(
               shape: BoxShape.rectangle,
               image: DecorationImage(
-                image: AssetImage('assets/img/logo.png'),
+                image: AssetImage('assets/man.png'),
               ),
             ),
           ),

@@ -1,6 +1,9 @@
+import 'package:app/form.dart';
 import 'package:flutter/material.dart';
 import 'package:app/header_drawer.dart';
 import 'package:app/data.dart';
+import 'package:app/profil.dart';
+import 'package:app/login.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,27 +28,37 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 leading: const Icon(Icons.home),
                 title: const Text("Home"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
               ),
               ListTile(
                 leading: const Icon(Icons.star),
                 title: const Text("Penitipan Barang"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const FormPage()));
+                },
               ),
               ListTile(
                 leading: const Icon(Icons.people),
                 title: const Text("Profil"),
-                onTap: () {},
+                onTap: () {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fitur masih dalam pengembangan')));
+                },
               ),
               ListTile(
                 leading: const Icon(Icons.settings),
                 title: const Text("Pengaturan"),
-                onTap: () {},
+                onTap: () {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Fitur masih dalam pengembangan')));
+                },
               ),
               ListTile(
                 leading: const Icon(Icons.logout),
                 title: const Text("Log out"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen()));
+                },
               ),
             ],
           ),
@@ -79,23 +92,6 @@ class _HomePageState extends State<HomePage> {
                     Text("Home", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
-              ),
-            ),
-          ),
-          Card(
-            margin: const EdgeInsets.all(8),
-            child: InkWell(
-              onTap: () {},
-              splashColor: Colors.blue,
-              child: Center(
-                child: Column(mainAxisSize: MainAxisSize.min, children: const <Widget>[
-                  Icon(
-                    Icons.new_releases,
-                    size: 70,
-                    color: Colors.redAccent,
-                  ),
-                  Text("Profile", style: TextStyle(fontSize: 17.0)),
-                ]),
               ),
             ),
           ),
