@@ -30,10 +30,10 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Image.asset(
               'assets/logo.png',
-              height: 2000,
+              height: 200,
             ),
             const SizedBox(
-              height: 100,
+              height: 20,
             ),
             const CircularProgressIndicator.adaptive(
               valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
