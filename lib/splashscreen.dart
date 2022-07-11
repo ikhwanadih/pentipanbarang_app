@@ -29,11 +29,11 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/img/logo.png',
-              height: 20,
+              'assets/logo.png',
+              height: 40,
             ),
             const SizedBox(
-              height: 20,
+              height: 40,
             ),
             const CircularProgressIndicator.adaptive(
               valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
