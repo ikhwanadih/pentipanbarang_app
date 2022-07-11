@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:app/model/user_model.dart';
-
+import 'package:app/data.dart';
 import 'package:app/forgot.dart';
 import 'package:app/home.dart';
 import 'package:app/register.dart';
@@ -158,7 +158,7 @@ class _LoginScreenState extends State<LoginScreen> {
       try {
         await _auth.signInWithEmailAndPassword(email: email, password: password).then((uid) => {
               Fluttertoast.showToast(msg: "Login Successful"),
-              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage())),
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => DataPage())),
             });
       } on FirebaseAuthException catch (error) {
         switch (error.code) {
